@@ -1,0 +1,6 @@
+docker-machine ssh CHAR \
+	"docker service create --name engineering-bay \
+	-e OC_USERNAME=42 \
+	-e OC_PASSWD=born2code \
+	--replicas 2 \
+	--network overmind 42school/engineering-bay"

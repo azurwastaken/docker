@@ -1,0 +1,2 @@
+docker-machine ssh CHAR \
+	"docker service update --replicas 20 marines"

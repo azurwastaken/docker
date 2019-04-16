@@ -1,0 +1,6 @@
+docker-machine ssh CHAR \
+	"docker service create -d --network overmind \
+	--name orbital-command \
+	-e RABBITMQ_DEFAULT_USER=42 \
+	-e RABBITMQ_DEFAULT_PASS=born2code \
+	rabbitmq:3"
